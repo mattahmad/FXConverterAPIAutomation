@@ -32,7 +32,7 @@
 
 ## Additional Steps
 
-- Some additional steps I would add in the framework with more time include:
+Some additional steps I would add in the framework with more time include:
 - Test rate limiting by exceeding the allowed number of requests in a timeframe.
 - Simulate slow responses from the server.
 - Trigger and test a server-side error.
