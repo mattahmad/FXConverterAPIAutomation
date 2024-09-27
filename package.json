@@ -1,0 +1,19 @@
+{
+  "name": "fxconverter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.47.2",
+    "@types/node": "^22.6.1",
+    "allure-commandline": "^2.30.0",
+    "allure-playwright": "^3.0.2"
+  },
+  "dependencies": {
+    "csv-parse": "^5.5.6"
+  }
+}
