@@ -1,6 +1,7 @@
 import { test, expect } from '@playwright/test';
 import fs from 'fs';
 import { parse } from 'csv-parse/sync';
+import { print } from "../utils/commonUtils.ts";
 
   const records = parse(fs.readFileSync("./APIData.csv", "utf8"), {
     columns: true,
@@ -15,7 +16,7 @@ import { parse } from 'csv-parse/sync';
       const fxConversion = `${record.FXConversion}`
       const label = `${record.Label}`
       const getResult = await response.json()
-      console.log(JSON.stringify(getResult))
+      // print(JSON.stringify(getResult));
 
       // Validate response status, header and body
         expect.soft(response.status()).toBe(200)

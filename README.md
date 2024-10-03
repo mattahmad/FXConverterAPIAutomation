@@ -14,6 +14,7 @@
 
 ## Run Tests
 
+- `$ npm i`
 - `$ npx playwright test`
 
 ## Run Tests, Generate and Open Allure HTML Report
