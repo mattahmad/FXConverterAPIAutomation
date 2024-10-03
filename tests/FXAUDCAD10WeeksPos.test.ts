@@ -1,11 +1,11 @@
 import { test, expect } from '@playwright/test';
-
+import { print } from "../utils/commonUtils.ts";
   // Positive Scenarios
 
   test(`Test: FXAUDCAD 10 Weeks`, async ({ request }) => {
     const response = await request.get(`/valet/observations/FXAUDCAD/json?recent_weeks=10`)
     const getResult = await response.json()
-    console.log(JSON.stringify(getResult))
+    // print(JSON.stringify(getResult));
 
     // Validate response status, header and body
       expect.soft(response.status()).toBe(200)
